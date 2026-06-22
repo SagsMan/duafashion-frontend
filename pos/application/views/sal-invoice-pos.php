@@ -228,11 +228,7 @@
 
   <!-- LOGO -->
   <div class="logo-wrap">
-    <?php if(!empty($company_logo)): ?>
-      <img src="<?= base_url('uploads/company/'.$company_logo); ?>" alt="Logo">
-    <?php else: ?>
-      <img src="<?= base_url('uploads/dua-logo-new.jpg'); ?>" alt="DU'A Logo">
-    <?php endif; ?>
+    <img src="https://duafashion.store/images/dua-logo-new.jpg" alt="DU'A Logo">
   </div>
 
   <!-- STORE HEADER -->
