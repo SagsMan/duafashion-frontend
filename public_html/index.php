@@ -759,10 +759,10 @@ function catStyle(name){
   const k=(name||'').toLowerCase().trim();
   return CAT_STYLE[k]||CAT_STYLE['default'];
 }
-function placeholderHtml(catName,label,size='full'){
+function placeholderHtml(catName,label,size='full',hidden=false){
   const s=catStyle(catName);
   const fs=size==='thumb'?'1.6rem':'2.4rem';
-  return `<div class="prod-placeholder" style="background:${s.bg}">
+  return `<div class="prod-placeholder" style="${hidden?'display:none;':''}background:${s.bg}">
     <i class="fa-solid ${s.icon}" style="font-size:${fs};color:${s.color}"></i>
     <span style="color:${s.color};font-size:.78rem;font-weight:500;text-align:center;padding:0 14px">${esc(label)}</span>
   </div>`;
@@ -884,7 +884,7 @@ function buildCard(p,i,isNew){
   card.innerHTML=`
     <div class="prod-img">
       ${hasImg
-        ?`<img src="${p.image_url}" alt="${esc(p.item_name)}" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">${placeholderHtml(p.category_name,p.item_name,'thumb')}`
+        ?`<img src="${p.image_url}" alt="${esc(p.item_name)}" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">${placeholderHtml(p.category_name,p.item_name,'thumb',true)}`
         :placeholderHtml(p.category_name,p.item_name,'thumb')
       }
       <span class="prod-badge ${inStock?'badge-stock':'badge-out'}">${inStock?'In Stock':'Out of Stock'}</span>
