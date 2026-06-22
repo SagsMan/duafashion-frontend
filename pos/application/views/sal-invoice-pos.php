@@ -165,10 +165,10 @@
 
       @media print {
           .no-print { display: none !important; }
-          body { margin: 0; padding: 2px; width: 58mm; }
+          body { margin: 0 auto; padding: 2px; width: 58mm; }
           @page { margin: 0; size: 58mm auto; }
           body::after { position: fixed; }
-          html { display: block; background: #fff; padding: 0; }
+          html { display: flex; justify-content: center; background: #fff; padding: 0; }
       }
   </style>
   </head>
