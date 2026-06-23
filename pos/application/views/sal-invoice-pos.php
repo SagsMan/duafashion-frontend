@@ -232,7 +232,7 @@
   </div>
 
   <!-- STORE HEADER -->
-  <div class="store-name"><?= strtoupper($company_name); ?></div>
+
   <div class="store-info">
       <?php if(!empty(trim($company_address))): ?>
       <?= $company_address; ?><?= !empty($company_city) ? ', '.$company_city : ''; ?><br>
