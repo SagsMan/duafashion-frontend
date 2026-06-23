@@ -56,7 +56,7 @@
       .bold   { font-weight: bold; }
 
       .logo-wrap { text-align: center; padding: 4px 0 2px 0; }
-      .logo-wrap img { max-width: 80px; max-height: 50px; }
+      .logo-wrap img { max-width: 120px; max-height: 80px; display: block; margin: 0 auto; }
 
       .store-name {
           font-size: 13px;
