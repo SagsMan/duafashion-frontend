@@ -108,9 +108,9 @@
       .items-table .price-col { text-align: right;  width: 38px; }
       .items-table .total-col { text-align: right;  width: 40px; font-weight: 700; }
 
-      .totals-table { width: 100%; font-size: 9px; margin-top: 2px; border: none; border-collapse: collapse; }
+      .totals-table { width: 100%; font-size: 10px; margin-top: 2px; border: none; border-collapse: collapse; }
       .totals-table td { padding: 1.5px 1px; border: none !important; background: transparent !important; }
-      .totals-table .label  { text-align: right; padding-right: 4px; color: #444; font-weight: normal; border: none !important; }
+      .totals-table .label  { text-align: left; padding-left: 2px; color: #333; font-weight: 600; border: none !important; }
       .totals-table .amount { text-align: right; font-weight: 700; width: 48px; border: none !important; }
 
       /* Grand total row — plain dark background, NO button look */
@@ -122,7 +122,7 @@
           padding: 4px 3px;
           border: none !important;
       }
-      .grand-total .label  { color: #fff !important; text-align: right; padding-right: 4px; }
+      .grand-total .label  { color: #fff !important; text-align: left; padding-left: 3px; }
       .grand-total .amount { color: #fff !important; text-align: right; }
 
       /* Remove any inherited button styling that might come from Bootstrap */
